@@ -1,0 +1,25 @@
+<form action="{% url 'addTransaction'  year month day %}" method='post' class="form-group form">
+        <h3> New Transaction </h3> <br />
+        {% csrf_token %}
+          <div class="form-group">
+            <label> Type of Transaction </label>
+              <select name='type' class="form-control">
+                <option value='cloth'>cloth</option>
+                <option value='restaurant'>restaurant</option>
+                <option value='grocery'>grocery</option>
+                <option value='bill'>bill</option>
+                <option value='other'>other</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label> Amount </label>
+              <input class="form-control" type='text' name='amount' maxlength="100" />
+          </div>
+          <div class="form-group">
+            <label> Description </label>
+            <textarea class="form-control" name='des' cols='20' rows='5'> </textarea>
+          </div>
+          <div class="form-group">
+            <input class="btn btn-primary" type="submit" value="add" />
+          </div>
+      </form>

@@ -1,0 +1,31 @@
+.trans_list {
+	width: 600px;
+	text-align: center;
+	overflow: scroll;
+}
+
+body {
+	
+}
+
+
+th, td {
+	padding: 7px 10px 10px 10px;
+	text-align: center;
+	border-bottom: 2px solid rgb(128, 128, 128);
+}
+
+a {
+	text-decoration: none;
+	color: rgb(0,0,0);
+	padding: 10px;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	background-color: #0088bb;
+	color: rgb(255, 255, 255);
+}
